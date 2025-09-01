@@ -1,0 +1,16 @@
+[
+    {
+        "name": "server2",
+        "path": "C:\\Users\\mathi\\PycharmProjects\\2Darena\\server2.py",
+        "type": "python",
+        "auto_restart": true,
+        "monitor": false
+    },
+    {
+        "name": "server1",
+        "path": "C:\\Users\\mathi\\PycharmProjects\\server-manager\\servers\\server1\\server1.py",
+        "type": "python",
+        "auto_restart": true,
+        "monitor": true
+    }
+]

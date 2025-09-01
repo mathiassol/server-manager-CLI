@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Server Manager Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Server Manager Dashboard</h1>
+
+<div id="server-controls">
+    <input type="text" id="new-server-name" placeholder="Server Name">
+    <select id="new-server-type">
+        <option value="python">Python</option>
+        <option value="node">Node</option>
+    </select>
+    <button onclick="createServer()">Create Server</button>
+</div>
+
+<table id="servers-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>CPU %</th>
+            <th>Memory MB</th>
+            <th>Monitor</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div id="log-section">
+    <h2>Logs: <span id="log-server-name">None</span></h2>
+    <pre id="log-content"></pre>
+    <input type="text" id="log-input" placeholder="Send input to server">
+    <button onclick="sendInput()">Send</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
