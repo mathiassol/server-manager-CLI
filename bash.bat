@@ -1,1 +1,0 @@
-C:\Users\mathi\PycharmProjects\server-manager\.venv\Scripts\python.exe C:\Users\mathi\PycharmProjects\server-manager\server_manager.py 

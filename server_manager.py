@@ -412,6 +412,7 @@ def main() -> None:
         "exit": lambda: sys.exit(0),
         "create": lambda n, t: manager.create_server(n, t),
         "open": lambda n: manager.open_server(n),
+        "path": lambda n: print(manager.get_server(n).path) if manager.get_server(n) else print("Server not found."),
         "usage": lambda n: safe_run(manager.get_server(n).show_usage) if manager.get_server(n) else print("Server not found."),
         "monitor": lambda n, state: (
             setattr(manager.get_server(n), "monitor_enabled", (state.lower() == "on")) or
