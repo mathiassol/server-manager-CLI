@@ -12,7 +12,7 @@ A simple tool to wrangle your Python and Node.js development servers. Because ju
 
 ## Getting started
 
-You'll need Python 3.6+ and the psutil package:
+You'll need Python 3.6+(created in 3.11) and the psutil package:
 
 ```bash
 pip install psutil
